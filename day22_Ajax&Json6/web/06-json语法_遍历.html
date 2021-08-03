@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+    <script>
+        //1.定义基本格式
+        var person = {"name":"张三",age:23,'gender':true};
+
+        var ps =[{"name":"张三",age:23,'gender':true},
+            {"name":"李四",age:21,'gender':true},
+            {"name":"王五",age:20,'gender':false}];
+
+        for(var i = 0;i < ps.length;i++){
+            var p = ps[i];
+            for(var key in p){
+                alert(key+":"+p[key]);
+            }
+        }
+
+    </script>
+
+<body>
+
+</body>
+</html>
